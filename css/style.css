@@ -140,7 +140,7 @@ li a:hover {
   background-color: #F7F5EB;
 }
 
-.index_div h2 {
+.index_div #lit_h2, #hist_h2, #dict_h2 {
   margin: 10px;
   padding: 7px;
   text-decoration: underline;
@@ -344,7 +344,7 @@ li a:hover {
 }
 
 /* Media Query Tablet Viewport */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   /* General stuff */
   nav ul {
     display: block;
@@ -364,12 +364,11 @@ li a:hover {
   }
   .index_div #lit_h2 {
     grid-row: 1 / 2;
-    margin-left: 50px;
-    justify-self: left;
+    justify-self: center;
   }
   .index_div .fa-book {
     grid-row: 1 / 2;
-
+    margin-right: 150px;
   }
   
   .index_div #lit_desc {
@@ -378,12 +377,12 @@ li a:hover {
   
   .index_div #hist_h2 {
     grid-row: 3 / 4;
-    justify-self: left;
-    margin-left: 50px;
+    justify-self: center;
   }
   
   .index_div .fa-scale-unbalanced-flip {
     grid-row: 3 / 4;
+    margin-right: 150px;
   }
   
   .index_div #hist_desc {
@@ -392,13 +391,12 @@ li a:hover {
   
   .index_div #dict_h2 {
     grid-row: 5 / 6;
-    margin-left: 50px;
-    justify-self: left;
-
+    justify-self: center;
   }
   
   .index_div .fa-book-bookmark {
-    grid-row: 5 / 6
+    grid-row: 5 / 6;
+    margin-right: 150px;
   }
   .index_div #dict_desc {
     grid-row: 6 / 7;
@@ -497,7 +495,6 @@ li a:hover {
   .index_div #hist_h2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    margin-left: 70px;
   }
 
   .index_div .fa-scale-unbalanced-flip {
@@ -514,12 +511,11 @@ li a:hover {
   .index_div #dict_h2 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    margin-left: 50px;
   }
   
   .index_div .fa-book-bookmark {
     grid-column: 3 / 4;
-    grid-row: 1 / 2
+    grid-row: 1 / 2;
   }
 
   .index_div #dict_desc {
