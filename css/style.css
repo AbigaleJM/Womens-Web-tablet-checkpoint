@@ -246,10 +246,6 @@ li a:hover {
   border: solid #0A2647 5px;
 }
 
-.lit-image:hover {
-  width: 90%;
-}
-
 .femlit ol {
   list-style-position: inside;
   list-style-type: disc;
@@ -352,7 +348,7 @@ li a:hover {
 }
 
 /* Media Query Tablet Viewport */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   /* General stuff */
   nav ul {
     display: block;
@@ -379,6 +375,7 @@ li a:hover {
   .index_div .fa-book {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin-right: 250px;
 
   }
   
@@ -423,6 +420,17 @@ li a:hover {
   /* Literature */
   .femlit {
     grid-template-columns: 1fr;
+  }
+  .femlit div {
+    display: flex;
+    flex-direction: column;
+  }
+  .femlit h2 {
+    align-self: center;
+    font-size: 28pt;
+  }
+  .lit-image {
+    align-self: center;
   }
 
   /* History and Politics */
@@ -528,6 +536,12 @@ li a:hover {
   /* Literature */
   .femlit {
     grid-template-columns: 1fr 1fr;
+  }
+  #femlit_header {
+    margin-bottom: 30px;
+  }
+  .lit-image:hover {
+    width: 90%;
   }
 
   /* History and Politics */
